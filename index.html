@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mincheol Shin - Senior Android Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* index.html 전용 스타일 */
+    .hero {
+      background: transparent;
+      color: #fff;
+      text-align: center;
+      padding: 48px 20px 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .hero .tagline {
+      font-size: 1.2rem;
+      color: #a0a8b8;
+      font-weight: 300;
+    }
+
+    .hero .contact {
+      margin-top: 20px;
+      font-size: 0.95rem;
+      color: #a0a8b8;
+    }
+
+    .hero .contact a {
+      color: #a0a8b8;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .hero .contact a:hover {
+      border-bottom-color: #a0a8b8;
+      opacity: 1;
+    }
+
+    .section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #e0e0e0;
+      border-bottom: 2px solid #4a8eff;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .oss-category {
+      margin-top: 32px;
+    }
+
+    .oss-category:first-child {
+      margin-top: 24px;
+    }
+
+    .oss-category h3 {
+      font-size: 1.05rem;
+      color: #ccc;
+      margin-bottom: 12px;
+    }
+
+    .oss-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .oss-item {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      padding: 18px 22px;
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .oss-item:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-2px);
+    }
+
+    .oss-item .oss-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #4a8eff;
+      white-space: nowrap;
+    }
+
+    .oss-item .oss-desc {
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    @media (max-width: 480px) {
+      .hero { padding: 36px 20px 32px; }
+      .hero h1 { font-size: 1.6rem; }
+      .section { padding: 40px 20px; }
+      .apps-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>Mincheol Shin</h1>
+    <p class="tagline">Senior Android Developer</p>
+    <p class="contact">
+      <a href="mailto:gaiuszzang@gmail.com">gaiuszzang@gmail.com</a>
+      &nbsp;&middot;&nbsp;
+      <a href="https://github.com/gaiuszzang" target="_blank" rel="noopener">GitHub</a>
+      &nbsp;&middot;&nbsp;
+      <a href="https://groovin.io/doc/resume" target="_blank" rel="noopener">Resume</a>
+    </p>
+  </section>
+
+  <section class="section about">
+    <h2>About</h2>
+    <p>Android developer experienced across app development, AOSP framework, and firmware engineering. I've worked on smartphone firmware for mass production, led Android feature development at an e-commerce platform, built AI assistant clients, and am currently developing a connected car mobile app.</p>
+    <p>I believe in keeping things simple — implementing ideas quickly, validating in practice, and refining through thoughtful refactoring. I enjoy automating repetitive workflows and building lightweight tools that make development easier for everyone.</p>
+  </section>
+
+  <section class="section">
+    <h2>Apps</h2>
+    <div class="apps-grid">
+      <div class="app-card">
+        <img src="beauty-clock/icon_beautyclock.png" alt="Beauty Clock icon">
+        <div class="app-info">
+          <h3>Beauty Clock</h3>
+          <p>Beautiful desk clock for your phone.</p>
+          <div class="app-links">
+            <a href="beauty-clock/privacy-policy.html">Privacy Policy</a>
+            <span>&middot;</span>
+            <a href="beauty-clock/terms.html">Terms & Conditions</a>
+          </div>
+        </div>
+        <a class="play-store-link" href="https://play.google.com/store/apps/details?id=com.acanel.deskclock" target="_blank" rel="noopener" title="Play Store">
+          <svg width="16" height="16" viewBox="0 0 512 512" fill="currentColor">
+            <path d="M48,59.49v393a4.33,4.33,0,0,0,7.37,3.07L260,256,55.37,56.42A4.33,4.33,0,0,0,48,59.49Z"/><path d="M345.8,174,89.22,32.64l-.16-.09c-4.42-2.4-8.62,3.58-5,7.06L285.19,231.93Z"/><path d="M84.08,472.39c-3.64,3.48.56,9.46,5,7.06l.16-.09L345.8,338l-60.61-57.95Z"/><path d="M449.38,231l-71.65-39.46L310.36,256l67.37,64.43L449.38,281C468.87,270.23,468.87,241.77,449.38,231Z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="app-card">
+        <img src="tabatafy/icon_tabatafy.png" alt="Tabatafy icon">
+        <div class="app-info">
+          <h3>Tabatafy</h3>
+          <p>Simple and powerful Tabata timer.</p>
+          <div class="app-links">
+            <a href="tabatafy/privacy-policy.html">Privacy Policy</a>
+            <span>&middot;</span>
+            <a href="tabatafy/terms.html">Terms & Conditions</a>
+          </div>
+        </div>
+        <a class="play-store-link" href="https://play.google.com/store/apps/details?id=io.groovin.tabatafy" target="_blank" rel="noopener" title="Play Store">
+          <svg width="16" height="16" viewBox="0 0 512 512" fill="currentColor">
+            <path d="M48,59.49v393a4.33,4.33,0,0,0,7.37,3.07L260,256,55.37,56.42A4.33,4.33,0,0,0,48,59.49Z"/><path d="M345.8,174,89.22,32.64l-.16-.09c-4.42-2.4-8.62,3.58-5,7.06L285.19,231.93Z"/><path d="M84.08,472.39c-3.64,3.48.56,9.46,5,7.06l.16-.09L345.8,338l-60.61-57.95Z"/><path d="M449.38,231l-71.65-39.46L310.36,256l67.37,64.43L449.38,281C468.87,270.23,468.87,241.77,449.38,231Z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="app-card">
+        <img src="vibegame/icon_vibegame.png" alt="VibeGame icon">
+        <div class="app-info">
+          <h3>VibeGame</h3>
+          <p>Fun and exciting vibe game for everyone.</p>
+          <div class="app-links">
+            <a href="vibegame/privacy-policy.html">Privacy Policy</a>
+            <span>&middot;</span>
+            <a href="vibegame/terms.html">Terms & Conditions</a>
+          </div>
+        </div>
+        <a class="play-store-link" href="https://play.google.com/store/apps/details?id=io.groovin.vibegame" target="_blank" rel="noopener" title="Play Store">
+          <svg width="16" height="16" viewBox="0 0 512 512" fill="currentColor">
+            <path d="M48,59.49v393a4.33,4.33,0,0,0,7.37,3.07L260,256,55.37,56.42A4.33,4.33,0,0,0,48,59.49Z"/><path d="M345.8,174,89.22,32.64l-.16-.09c-4.42-2.4-8.62,3.58-5,7.06L285.19,231.93Z"/><path d="M84.08,472.39c-3.64,3.48.56,9.46,5,7.06l.16-.09L345.8,338l-60.61-57.95Z"/><path d="M449.38,231l-71.65-39.46L310.36,256l67.37,64.43L449.38,281C468.87,270.23,468.87,241.77,449.38,231Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Open Source</h2>
+    <div class="oss-category">
+      <h3>Libraries</h3>
+      <div class="oss-list">
+        <a class="oss-item" href="https://github.com/gaiuszzang/GroovinBottomSheet" target="_blank" rel="noopener">
+          <span class="oss-name">GroovinBottomSheet</span>
+          <span class="oss-desc">Customizable Bottom Sheet Library for Jetpack Compose</span>
+        </a>
+        <a class="oss-item" href="https://github.com/gaiuszzang/GroovinCollapsingToolBar" target="_blank" rel="noopener">
+          <span class="oss-name">GroovinCollapsingToolBar</span>
+          <span class="oss-desc">Customizable collapsing toolbar layout for Jetpack Compose</span>
+        </a>
+        <a class="oss-item" href="https://github.com/gaiuszzang/GroovinExpandableBox" target="_blank" rel="noopener">
+          <span class="oss-name">GroovinExpandableBox</span>
+          <span class="oss-desc">Expandable and foldable box component for Jetpack Compose</span>
+        </a>
+        <a class="oss-item" href="https://github.com/gaiuszzang/GroovinPermX" target="_blank" rel="noopener">
+          <span class="oss-name">GroovinPermX</span>
+          <span class="oss-desc">Handling Android runtime permissions with Kotlin Coroutines</span>
+        </a>
+        <a class="oss-item" href="https://github.com/gaiuszzang/EncryptHelper" target="_blank" rel="noopener">
+          <span class="oss-name">EncryptHelper</span>
+          <span class="oss-desc">Secure Android encryption library leveraging Android KeyStore</span>
+        </a>
+      </div>
+    </div>
+    <div class="oss-category">
+      <h3>Developer Tools</h3>
+      <div class="oss-list">
+        <a class="oss-item" href="https://github.com/gaiuszzang/LogMeow" target="_blank" rel="noopener">
+          <span class="oss-name">LogMeow</span>
+          <span class="oss-desc">Android logcat viewer for Desktop (macOS, Windows, Linux)</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Mincheol Shin. All rights reserved.
+  </footer>
+
+</body>
+</html>
