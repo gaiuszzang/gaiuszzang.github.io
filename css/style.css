@@ -448,6 +448,10 @@ ul { margin-bottom: 16px; padding-left: 20px; color: #aaa; }
   margin-bottom: 12px;
 }
 
+.item-content ul + h4 {
+  margin-top: 20px;
+}
+
 .item-content ul {
   padding-left: 20px;
   margin-bottom: 0;
