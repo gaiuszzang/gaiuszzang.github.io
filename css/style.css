@@ -212,6 +212,24 @@ ul { margin-bottom: 16px; padding-left: 20px; color: #aaa; }
   background: rgba(74, 142, 255, 0.1);
 }
 
+.page-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.page-title-row h1 {
+  margin-bottom: 0;
+}
+
+.page-title-row .lang-switch {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
 .resume-profile {
   display: flex;
   gap: 24px;
