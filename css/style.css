@@ -131,7 +131,9 @@ ul { margin-bottom: 16px; padding-left: 20px; color: #aaa; }
 }
 
 .play-store-link,
-.app-store-link {
+.app-store-link,
+.github-link,
+.contact-link {
   flex-shrink: 0;
   color: #e0e0e0;
   opacity: 0.4;
@@ -145,11 +147,17 @@ ul { margin-bottom: 16px; padding-left: 20px; color: #aaa; }
 }
 
 .play-store-link:hover,
-.app-store-link:hover {
+.app-store-link:hover,
+.github-link:hover,
+.contact-link:hover {
   opacity: 1;
   color: #4a8eff;
   background: rgba(74, 142, 255, 0.1);
   transform: scale(1.1);
+}
+
+.developer-tool-card .app-info p {
+  margin-bottom: 0;
 }
 
 
