@@ -1,4 +1,5 @@
-name: groovin-io-pages-deploy
+name: groovin.io pages deployment
+run-name: groovin.io pages deployment
 
 on:
   push:
